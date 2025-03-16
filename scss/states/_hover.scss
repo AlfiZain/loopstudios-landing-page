@@ -4,6 +4,10 @@
   width: 50%;
 }
 
+.sidebar-list .sidebar-link:hover::after {
+  width: 50%;
+}
+
 .projects-button:hover {
   background-color: var.$black;
   color: var.$white;

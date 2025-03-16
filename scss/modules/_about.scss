@@ -1,0 +1,59 @@
+@use "../utils/variables" as var;
+
+.about {
+  position: relative;
+  padding-inline: 1.5rem;
+  margin-block-end: 6rem;
+  .illustration {
+    margin-inline: auto;
+  }
+  .container {
+    padding-inline: 1rem;
+    .title {
+      margin-block: 2.5rem 1rem;
+    }
+  }
+  @media only screen and (min-width: 37.5rem) {
+    padding-inline: 2.5rem;
+  }
+  @media only screen and (min-width: 48rem) {
+    .container {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: var.$white;
+      max-width: 500px;
+      text-align: left;
+      padding-inline: 4rem 2rem;
+      .title {
+        text-align: left;
+        font-size: 2.5rem;
+      }
+    }
+  }
+  @media only screen and (min-width: 64rem) {
+    max-width: 78rem;
+    margin-inline: auto;
+    .illustration {
+      margin-inline: 0;
+    }
+    .container {
+      padding-block-start: 2rem;
+      .title {
+        text-align: left;
+        font-size: 2.5rem;
+      }
+    }
+  }
+  @media only screen and (min-width: 78rem) {
+    .container {
+      max-width: 625px;
+      padding-inline: 8rem 2rem;
+      padding-block-start: 3rem;
+      .title {
+        text-align: left;
+        font-size: 3.5rem;
+      }
+    }
+  }
+}

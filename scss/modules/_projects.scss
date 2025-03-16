@@ -1,0 +1,56 @@
+@use "../utils/variables" as var;
+
+.projects {
+  padding-inline: 1.5rem;
+  margin-block-end: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+  .title {
+    margin-block-end: 2rem;
+  }
+  .card-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+  }
+  @media only screen and (min-width: 37.5rem) {
+    padding-inline: 2.5rem;
+  }
+  @media only screen and (min-width: 48rem) {
+    .flex-row-between {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-block-end: 2rem;
+      .title {
+        margin-block-end: 0;
+      }
+      .button-tablet {
+        display: block;
+      }
+    }
+    .card-list {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1.5rem;
+    }
+  }
+  @media only screen and (min-width: 64rem) {
+    max-width: 78rem;
+    margin-inline: auto;
+    .card-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media only screen and (min-width: 78rem) {
+    .card-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@use "../utils/variables" as var;
+
+footer {
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 2.5rem;
+    margin-inline: auto;
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    margin-block: 1.5rem;
+    .footer-link::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: var.$white;
+      margin: auto;
+      transition: 0.3s ease-in-out;
+    }
+  }
+  @media only screen and (min-width: 48rem) {
+    .container {
+      grid-template-columns: none;
+      grid-template-areas:
+        "img social-icon"
+        "footer-nav copyright";
+      justify-content: space-between;
+      justify-items: start;
+      row-gap: 2rem;
+      img {
+        grid-area: img;
+      }
+      .footer-nav {
+        grid-area: footer-nav;
+        flex-direction: row;
+        justify-content: start;
+        column-gap: 1.5rem;
+        margin-block: 0;
+      }
+      .social-icon-list {
+        grid-area: social-icon;
+        margin-block: 0;
+        justify-self: end;
+      }
+      .copyright {
+        grid-area: copyright;
+      }
+    }
+  }
+  @media only screen and (min-width: 64rem) {
+    .container {
+      max-width: 78rem;
+    }
+  }
+}

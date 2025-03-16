@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="Loopstudios" class="brand" />
+      <button id="hamburger-button" class="hamburger-button" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="sidebar-list">
+        <img src="./images/icon-hamburger.svg" alt="" />
+      </button>
+      <nav id="navbar" class="navbar">
+        <ul id="nav-list" class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link"> About </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Careers </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Events </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Products </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"> Support </a>
+          </li>
+        </ul>
+      </nav>
+      <nav id="sidebar" class="sidebar" aria-hidden="true">
+        <div class="sidebar-header">
+          <img src="./images/logo.svg" alt="Loopstudios" class="brand" />
+          <button id="close-button" class="close-button">
+            <img src="./images/icon-close.svg" alt="" />
+          </button>
+        </div>
+        <ul id="sidebar-list" class="sidebar-list">
+          <li class="sidebar-item">
+            <a href="#"> About </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#"> Careers </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#"> Events </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#"> Products </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#"> Support </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-banner">
+        <div class="container">
+          <h1 class="headlines">IMMERSIVE EXPERIENCES THAT DELIVER</h1>
+        </div>
+      </section>
+
+      <section class="about">
+        <picture>
+          <source srcset="./images/desktop/image-interactive.jpg" media="(min-width: 37.5rem)" />
+          <img src="./images/mobile/image-interactive.jpg" alt="Interactive Illustration" class="illustration" />
+        </picture>
+        <div class="container">
+          <h2 class="title">The leader in interactive VR</h2>
+          <p class="subtitle">
+            Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind
+            to their brand.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="flex-row-between">
+          <h2 class="title">Our creations</h2>
+          <button class="projects-button button-tablet">See all</button>
+        </div>
+        <div class="card-list">
+          <a href="#" class="card card-deep-earth">
+            <h3>Deep <br />earth</h3>
+          </a>
+          <a href="#" class="card card-night-arcade">
+            <h3>Night <br />arcade</h3>
+          </a>
+          <a href="#" class="card card-soccer-team">
+            <h3>Soccer <br />team VR</h3>
+          </a>
+          <a href="#" class="card card-the-grid">
+            <h3>The <br />grid</h3>
+          </a>
+          <a href="#" class="card card-from-above">
+            <h3>From up <br />above VR</h3>
+          </a>
+          <a href="#" class="card card-pocket-borealis">
+            <h3>Pocket <br />borealis</h3>
+          </a>
+          <a href="#" class="card card-the-curiosity">
+            <h3>The <br />curiosity</h3>
+          </a>
+          <a href="#" class="card card-fisheye">
+            <h3>Make it <br />fisheye</h3>
+          </a>
+        </div>
+        <button class="projects-button button-mobile">See all</button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <img src="./images/logo.svg" alt="Loopstudios" />
+        <ul class="footer-nav">
+          <li class="footer-item">
+            <a href="#" class="footer-link"> About </a>
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-link"> Careers </a>
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-link"> Events </a>
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-link"> Products </a>
+          </li>
+          <li class="footer-item">
+            <a href="#" class="footer-link"> Support </a>
+          </li>
+        </ul>
+        <ul class="social-icon-list">
+          <li>
+            <a href="#" class="social-icon"><img src="./images/icon-facebook.svg" alt="Icon Facebook" /></a>
+          </li>
+          <li>
+            <a href="#" class="social-icon"><img src="./images/icon-twitter.svg" alt="Icon Twitter" /></a>
+          </li>
+          <li>
+            <a href="#" class="social-icon"><img src="./images/icon-pinterest.svg" alt="Icon Pinterest" /></a>
+          </li>
+          <li>
+            <a href="#" class="social-icon"><img src="./images/icon-instagram.svg" alt="Icon Instagram" /></a>
+          </li>
+        </ul>
+        <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </footer>
+    <script defer src="./scripts/main.js"></script>
+  </body>
+</html>

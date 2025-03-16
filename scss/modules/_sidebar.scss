@@ -1,0 +1,42 @@
+@use "../utils/variables" as var;
+
+.sidebar {
+  opacity: 0;
+  transform: translateX(-100%);
+  position: absolute;
+  z-index: 999;
+  top: 1.5rem;
+  width: 100%;
+  height: 100svh;
+  background-color: var.$black;
+  margin: -1.5rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  visibility: hidden;
+  .sidebar-header {
+    position: absolute;
+    top: 1.5rem;
+    width: calc(100% - 3rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sidebar-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  @media only screen and (min-width: 37.5rem) {
+    top: 2rem;
+    margin: -2rem;
+    padding-block: 5rem 2rem;
+    padding-inline: 2rem;
+    height: 75svh;
+    .sidebar-header {
+      top: 2rem;
+      width: calc(100% - 4rem);
+    }
+  }
+}

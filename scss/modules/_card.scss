@@ -1,0 +1,88 @@
+@use "../utils/variables" as var;
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: end;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(var.$black, 0.5), rgba(var.$black, 0));
+    transition: background-color 0.3s ease-in-out;
+  }
+  h3 {
+    position: absolute;
+    width: 175px;
+    padding-block: 3rem 1rem;
+    padding-inline: 1rem;
+    transition: 0.3s ease-in-out;
+  }
+  &.card-deep-earth {
+    background-image: url("../images/mobile/image-deep-earth.jpg");
+  }
+  &.card-night-arcade {
+    background-image: url("../images/mobile/image-night-arcade.jpg");
+  }
+  &.card-soccer-team {
+    background-image: url("../images/mobile/image-soccer-team.jpg");
+  }
+  &.card-the-grid {
+    background-image: url("../images/mobile/image-grid.jpg");
+  }
+  &.card-from-above {
+    background-image: url("../images/mobile/image-from-above.jpg");
+  }
+  &.card-pocket-borealis {
+    background-image: url("../images/mobile/image-pocket-borealis.jpg");
+  }
+  &.card-the-curiosity {
+    background-image: url("../images/mobile/image-curiosity.jpg");
+  }
+  &.card-fisheye {
+    background-image: url("../images/mobile/image-fisheye.jpg");
+  }
+}
+@media only screen and (min-width: 48rem) {
+  .card {
+    height: 480px;
+    h3 {
+      width: 100%;
+      font-size: 2rem;
+      padding-inline: 2.5rem;
+      padding-block-end: 1.5rem;
+    }
+    &.card-deep-earth {
+      background-image: url("../images/desktop/image-deep-earth.jpg");
+    }
+    &.card-night-arcade {
+      background-image: url("../images/desktop/image-night-arcade.jpg");
+    }
+    &.card-soccer-team {
+      background-image: url("../images/desktop/image-soccer-team.jpg");
+    }
+    &.card-the-grid {
+      background-image: url("../images/desktop/image-grid.jpg");
+    }
+    &.card-from-above {
+      background-image: url("../images/desktop/image-from-above.jpg");
+    }
+    &.card-pocket-borealis {
+      background-image: url("../images/desktop/image-pocket-borealis.jpg");
+    }
+    &.card-the-curiosity {
+      background-image: url("../images/desktop/image-curiosity.jpg");
+    }
+    &.card-fisheye {
+      background-image: url("../images/desktop/image-fisheye.jpg");
+    }
+  }
+}

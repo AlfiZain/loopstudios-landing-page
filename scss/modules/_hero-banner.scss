@@ -1,0 +1,48 @@
+@use "../utils/variables" as var;
+
+.hero-banner {
+  position: relative;
+  background-image: url("../images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 6rem;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(var.$black, 0.3);
+  }
+  .container {
+    position: relative;
+    .headlines {
+      max-width: 370px;
+      border: 1px solid var.$white;
+      padding: 1.5rem;
+    }
+  }
+  @media only screen and (min-width: 37.5rem) {
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-position: center;
+    min-height: 75svh;
+    .container {
+      .headlines {
+        margin-inline-start: 2rem;
+      }
+    }
+  }
+  @media only screen and (min-width: 64rem) {
+    min-height: 90svh;
+    .container {
+      max-width: 78rem;
+      width: 100%;
+      .headlines {
+        max-width: 550px;
+        font-size: 4rem;
+      }
+    }
+  }
+}

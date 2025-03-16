@@ -1,0 +1,28 @@
+@use "../utils/variables" as var;
+
+.nav-link:focus {
+  border: none;
+  outline: none;
+}
+
+.nav-link:focus::after {
+  width: 50%;
+}
+
+.footer-nav .footer-link:focus {
+  border: none;
+  outline: none;
+}
+
+.footer-nav .footer-link:focus::after {
+  width: 50%;
+}
+
+.social-icon:focus {
+  border: none;
+  outline: none;
+}
+
+.social-icon:focus::after {
+  width: 100%;
+}

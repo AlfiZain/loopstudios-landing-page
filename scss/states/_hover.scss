@@ -1,0 +1,29 @@
+@use "../utils/variables" as var;
+
+.nav-link:hover::after {
+  width: 50%;
+}
+
+.projects-button:hover {
+  background-color: var.$black;
+  color: var.$white;
+}
+
+.card:hover::before {
+  background-image: none;
+  background-color: rgba(var.$white, 0.75);
+}
+
+.card:hover {
+  h3 {
+    color: var.$black;
+  }
+}
+
+.footer-nav .footer-link:hover::after {
+  width: 50%;
+}
+
+.social-icon:hover::after {
+  width: 100%;
+}
